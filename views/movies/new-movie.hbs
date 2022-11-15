@@ -1,0 +1,22 @@
+<h1> Movie Createion </h1>
+<form action="/lab-movies-celebrities/views/movies/create" method="post">
+
+    <label for="title"> Title </label>
+    <input type="text" name="title" id="title" multiple/>
+
+    <label for="genre"> Genre </label>
+    <input type="text" name="genre" id="genre" multiple/>
+
+    <label for="plot"> Plot </label>
+    <input type="text" name="plot" id="name" multiple/>
+
+    <label for="cast"> Cast </label>
+    <input type="text" name="cast" id="cast" multiple/>
+    {{#each celeb}}
+    <option value="{{_id}}">{{name}}</option>
+
+    {{/each}}
+    <input>
+    <button type="submit"> Submit </button>
+
+</form>

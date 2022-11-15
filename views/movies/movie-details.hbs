@@ -1,0 +1,18 @@
+<div>
+    <br>
+    <h2>Movie</h2>
+    <h4>Title: {{movie.title}}</h4>
+    <h5>Genre: {{movie.genre}}</h5>
+    <h6>Plot: {{movie.plot}}</h6>
+
+    {{#each movie.cast}}
+    <p>Name: {{name}}</p>
+    <p>Occupation: {{occupation}}</p>
+    <p>Phrase: {{catchPhrase}}</p>
+
+    {{/each}}
+
+    <form action="/lab-movies-celebrities/views/movies/" method="POST">
+    <button>Delete</button>
+    </form>
+</div>
